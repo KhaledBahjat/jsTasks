@@ -21,3 +21,10 @@ studentUniversty(x);
 alert("Welcome to my site");
 var x = prompt("enter your name");
 alert("welcome " + x);
+// /////////////////////////////////////////////////////////////////////////////
+var x = prompt();
+function todaysTemperature(x) {
+  var ans = x >= 30 ? "HOT" : "Cold";
+  return ans;
+}
+console.log(todaysTemperature(x));
