@@ -1,4 +1,4 @@
-var x = prompt()
+var x = prompt();
 function studentUniversty(x) {
   switch (x) {
     case "  FCI":
@@ -18,3 +18,6 @@ function studentUniversty(x) {
 
 studentUniversty(x);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+alert("Welcome to my site");
+var x = prompt("enter your name");
+alert("welcome " + x);
