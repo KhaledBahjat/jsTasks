@@ -48,13 +48,13 @@ let num1 = prompt("Enter number 1");
 let num2 = prompt("Enter number 2");
 document.write(plus(num1, num2));
 //task 6
-function weather(temp, actual) {
+function weather(temp, fells) {
 
-  if (temp >= 25 && temp <= 30 && actual >= 25 && actual <= 30) {
+  if (temp >= 25 && temp <= 30 && fells >= 25 && fells <= 30) {
       return "Normal";
-  } else if (temp < 25 && actual < 25) {
+  } else if (temp < 25 && fells < 25) {
       return "Cold";
-  } else if (temp > 30 && actual > 30) {
+  } else if (temp > 30 && fells > 30) {
       return "Hot";
   } else {
       return "Unknown";
@@ -62,9 +62,11 @@ function weather(temp, actual) {
 }
 
 let temp = prompt("Enter Today's Temperature");
-let actual = prompt("Enter Today's Actual feel temperature");
-document.write(weather(temp, actual));
+let fells = prompt("Enter Today's  feel temperature");
+document.write(weather(temp, fells));
 task 6
+let s = prompt("Enter start number");
+let e = prompt("Enter end number");
 function oddNum(s, e) {
   for (let i = s; i <= e; i++) {
       if (i &1) {
@@ -72,16 +74,13 @@ function oddNum(s, e) {
       }
   }
 }
-
-let s = prompt("Enter start number");
-let e = prompt("Enter end number");
 oddNum(s, e);
 task 7
 while (true) {
-  let age = prompt("Enter Your Birth Year if less than 2010");
+  let age = prompt("Enter Your");
   if (age < 2010) {
       let name = prompt("Enter Your Name");
-      document.write(`Name: ${name} <br> Birth year: ${age} <br> Age: ${2011 - age}`);
+      document.write(`Age: ${2024 - age}`);
       break;
   }
 }
